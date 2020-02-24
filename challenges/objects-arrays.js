@@ -5,21 +5,25 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
-class dinosaur{
-  constructor(name, diet, weight, lenght, period) {
+// class dinosaur{
+//   constructor(name, diet, weight, lenght, period) {
+
+//   }
+  
+// }
+
+function dinosaur(name, diet, weight, length, period){
     this.name =name;
     this.diet = diet;
     this.weight = weight;
-    this.lenght = lenght;
+    this.length = length;
     this.period = period;
-  }
-  
 }
-let tyrannosaurus = new dinosaur("tyrannosaurus", "carnivorous", "7000kg", "12m", "Late Cretaceous");
+const tyrannosaurus = new dinosaur ("tyrannosaurus","carnivorous","7000kg","12m","Late Cretaceous");
 
-let stegosaurus = new dinosaur( "stegosaurus", "herbivorous", "2000kg", "9m", "Late Jurassic");
+const stegosaurus = new dinosaur("stegosaurus","herbivorous","2000kg","9m", "Late Jurassic");
 
-let velociraptor = new dinosaur("velociraptor", "carnivorous", "15kg", "1.8m", "Late Cretaceous");
+const velociraptor = new dinosaur ("velociraptor","carnivorous", "15kg","1.8m", "Late Cretaceous");
 
 // Using your dinosaur objects, log answers to these questions:
 
@@ -30,14 +34,14 @@ console.log(tyrannosaurus.weight);
 console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log(stegosaurus.lenght);
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
 console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-dinosaur.prototype.roar= () => "RAWERSRARARWERSARARARRRR!";
+dinosaur.prototype.roar = () =>"RAWERSRARARWERSARARARRRR!";
 
 console.log(tyrannosaurus.roar());
 
